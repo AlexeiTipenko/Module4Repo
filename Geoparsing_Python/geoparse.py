@@ -9,10 +9,13 @@ for row in inputfile:
   url = 'http://maps.googleapis.com/maps/api/geocode/json'
   payload = {'address':row, 'sensor':'false'}
   r = requests.get(url, params=payload)
-  json = r.json()
 
-  lat = json['results'][0]['geometry']['location']['lat']
-  lng = json['results'][0]['geometry']['location']['lng']
+  if r.status_code == 200:
+      json = r.json()
 
-  newrow = [row,lat,lng]
-  outputfile.writerow(newrow)
+      if json.get("results", []):
+          lat = json['results'][0]['geometry']['location']['lat']
+          lng = json['results'][0]['geometry']['location']['lng']
+
+          newrow = [row,lat,lng]
+          outputfile.writerow(newrow)
