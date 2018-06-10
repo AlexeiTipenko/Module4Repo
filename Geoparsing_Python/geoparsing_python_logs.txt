@@ -1,0 +1,131 @@
+    1  history
+    2  which pip
+    3  python get-pip.py
+    4  cd /usr/local/bin/pip
+    5  cd ~/usr/local/bin/pip
+    6  /usr/local/bin/pip
+    7  pip install requests
+    8  pip install beautifulsoup4
+    9  pip install simplekml
+   10  ls
+   11  cd Dropbox
+   12  ls
+   13  cd Year3
+   14  l
+   15  cd DIGH3814O
+   16  ls
+   17  cd Module4Repo
+   18  ls
+   19  mkdir Geoparsing_Python
+   20  cd Geoparsing_Python
+   21  ls
+   22  wget https://github.com/hist3907b-winter2015/module4-holes/blob/master/texas.csv
+   23  curl https://github.com/hist3907b-winter2015/module4-holes/blob/master/texas.csv
+   24  ls
+   25  cd ..
+   26  ls
+   27  cd Geoparsing_Python
+   28  ls
+   29  wget https://github.com/hist3907b-winter2015/module4-holes/blob/master/texas.csv
+   30  brew install wget
+   31  ls
+   32  wget https://github.com/hist3907b-winter2015/module4-holes/blob/master/texas.csv
+   33  ls
+   34  nano texas.csv
+   35  wget https://github.com/hist3907b-winter2015/module4-holes/blob/raw/master/texas.csv
+   36  wget -L https://github.com/hist3907b-winter2015/module4-holes/blob/master/texas.csv
+   37  ls
+   38  wget https://raw.githubusercontent.com/hist3907b-winter2015/module4-holes/master/texas.csv
+   39  ls
+   40  nano texas.csv.2
+   41  rm texas.csv
+   42  rm texas.csv.1
+   43  rm texas.csv.2
+   44  wget https://raw.githubusercontent.com/hist3907b-winter2015/module4-holes/master/texas.csv
+   45  ls
+   46  nano texas.csv
+   47  git status
+   48  git add .
+   49  git commit -m "Added texas.csv file"
+   50  git push upstream master
+   51  git push
+   52  git push origin master
+   53  ls
+   54  cd ..
+   55  ls
+   56  git status
+   57  git add .
+   58  git commit -m "Exported cleaned-places.csv from Open Refine"
+   59  git push origin master
+   60  git status
+   61  git add .
+   62  git commit -m "Added column stacked version of cleaned-places.csv"
+   63  git push origin master
+   64  git status
+   65  git add .
+   66  git commit -m "Added csv with no duplicated and placelist.txt file"
+   67  git push origin master
+   68  git status
+   69  git add .
+   70  git commit -m "Added geoparse.py"
+   71  git push origin master
+   72  ls
+   73  cd Geoparsing_Python
+   74  ls
+   75  python geoparse.py
+   76  pip install requests
+   77  python geoparse.py
+   78  sudo pip install requests
+   79  python geoparse.py
+   80  brew reinstall python
+   81  pip install requests
+   82  python geoparse.py
+   83  zsh
+   84  history
+   85  cd Dropbox
+   86  ls
+   87  cd Year3
+   88  ls
+   89  cd DIGH3814O
+   90  ls
+   91  cd Module4Repo
+   92  ls
+   93  cd Geoparsing_Python
+   94  ls
+   95  python geoparse.py
+   96  pip install requests
+   97  pip list
+   98  pip uninstall requests
+   99  pip list
+  100  pip install requests
+  101  python geoparse.py
+  102  sudo pip3 install requests
+  103  pip list
+  104  python geoparse.py
+  105  \n
+  106  git status
+  107  git add .
+  108  git commit -m "Added geocoded-placelist.txt"
+  109  git push origin master
+  110  list pip
+  111  pip list
+  112  ls
+  113  python txt_to_kml.py
+  114  pip install simplekml
+  115  python txt_to_kml.py
+  116  pip list
+  117  pip3 install simplekml
+  118  pip list
+  119  python txt_to_kml.py
+  120  git status
+  121  git add .
+  122  git commit -m "Converted geocoded placelist to kml file"
+  123  git push upstream master
+  124  git push origin master
+  125  ls
+  126  git status
+  127  git add .
+  128  git commit -m "Added some screenshots of maps"
+  129  git push origin master
+  130  history
+  131  history > geoparsing_python_logs.md
