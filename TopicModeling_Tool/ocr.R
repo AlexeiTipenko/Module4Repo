@@ -7,7 +7,7 @@ library(magrittr)
 library(pdftools)
 library(tesseract)
 
-dest <- "/module2repo/war-diary-text-all"
+dest <- "~/Dropbox/Year3/DIGH3814O/Module4Repo/TopicModeling_Tool/war-diary"
 myfiles <- list.files(path = dest, pattern = "jpg", full.names = TRUE)
 
 # improve the images
@@ -22,34 +22,7 @@ lapply(myfiles, function(i){
     image_write(format = 'jpg', density = '300x300') %>%
     tesseract::ocr()
   
-  outfile <- paste(i,"-ocr.txt",sep="")
-  cat(text, file=outfile, sep="\n")
+  #outfile <- paste(i,".txt",sep="")
+  #cat(text, file=outfile, sep="\n")
+  write.table(text, "~/e001518030.jpg.txt")
 })
-
-text <- image_read("~/module2repo/war-diary/e001518029.jpg") %>% 
-  image_resize("2000") %>% 
-  image_convert(colorspace = 'gray') %>% 
-  image_trim() %>% 
-  image_ocr()
-write.table(text, "~/e001518029.jpg.txt")
-
-text <- image_read("~/module2repo/war-diary/e001518030.jpg") %>% 
-  image_resize("2000") %>% 
-  image_convert(colorspace = 'gray') %>% 
-  image_trim() %>% 
-  image_ocr()
-write.table(text, "~/e001518030.jpg.txt")
-
-# text <- image_read("~/module2repo/ocr-test/R_1.png") %>% 
-#   image_resize("2000") %>% 
-#   image_convert(colorspace = 'gray') %>% 
-#   image_trim() %>% 
-#   image_ocr()
-# write.table(text, "~/R_1.txt")
-
-# text <- image_read("~/module2repo/war-diary/e001518087.jpg") %>% 
-#   image_resize("2000") %>% 
-#   image_convert(colorspace = 'gray') %>% 
-#   image_trim() %>% 
-#   image_ocr()
-# write.table(text, "~/R.txt")
